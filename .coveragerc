@@ -1,0 +1,16 @@
+[run]
+branch = True
+data_file = .coverage
+source=credentials
+omit =
+    credentials/settings*
+    credentials/conf*
+    *wsgi.py
+    *migrations*
+    *admin.py
+    *static*
+    *templates*
+[report]
+exclude_lines = 
+    pragma: no cover
+    if TYPE_CHECKING:
